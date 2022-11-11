@@ -5,7 +5,7 @@
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
     <br>
-    <h2>Projetos Concluídos</h2>
+    <h2 class="mt-4 text-light" style="font-family: Nunito;">Projetos Concluídos</h2>
     <p>Abaixo estão listados projetos que nois ja consluiu</p>
     <div class="row my-4" id="projetos" params='disabled_at;status:=:0'>
     </div>

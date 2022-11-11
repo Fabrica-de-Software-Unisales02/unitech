@@ -25,7 +25,7 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn text-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="btn text-secondary dropdown-toggle" href="./formularios" aria-expanded="false">
                             Formulários de Inscrição
                         </a>
 

@@ -5,7 +5,7 @@
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
     <br>
-    <h2 tabindex="0">Projetos Em Execução</h2>
+    <h2 class="mt-4 text-light" style="font-family: Nunito;" tabindex="0">Projetos Em Execução</h2>
     <p>Abaixo estão listados nossos projetos em execução que nois tamo coisando</p>
     <div class="row my-4" id="projetos" params='disabled_at;status:=:1'>
     </div>

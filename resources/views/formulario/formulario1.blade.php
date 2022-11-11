@@ -1,8 +1,9 @@
-<section class="inscricao mb-2 rounded" id="estudante">
+<section class="formulario mb-2 rounded" id="estudante">
+    <img src="../img/education_lg.svg" alt="">
     <h2>Inscrição para estudantes Unisales </h2>
     <p>Se você é aluno unisales e tem interesse em participar em um dos nossos projetos, faça já sua inscrição, preencha os campos abaixo e logo entraremos em contato.</p>
     <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
-        <form class="row g-3" id="f_estudante">
+        <form class="row g-3 text-start" id="f_estudante">
             <div class="col-md-6">
                 <label for="nome_completo" class="form-label">Nome Completo*</label>
                 <input type="name" class="form-control" id="nome_completo" name="nome_completo" placeholder="">
@@ -57,7 +58,7 @@
                 </select>
             </div>
             <div class="col-12 d-grid gap-2">
-                <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                <button type="submit" class="btn btn-outline-success">Confirmar inscrição</button>
             </div>
         </form>
     </div>

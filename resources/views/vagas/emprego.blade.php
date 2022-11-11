@@ -7,7 +7,7 @@
     <br>
     <div class="container text-start">
         <div class="bg-dark p-4 mt-4 rounded">
-            <h2>Vagas de Emprego Disponíveis</h2>
+            <h2 class="mt-4 text-light" style="font-family: Nunito;">Vagas de Emprego Disponíveis</h2>
             <p>Assim que as vagas ficarem disponíveis, atualizaremos este menu...</p>
         </div>
         <br>
@@ -16,7 +16,7 @@
                 <div class="card bg-dark vaga">
                     <div class="vaga-img mx-2 my-4" style="background-image: url('/img/trainee.jpg');"></div>
                     <div class="card-body">
-                        <h5 class="card-title">Pessoa Trainee - Segurança da Informação</h5>
+                        <h5 class="card-title text-light" style="font-family: Nunito;">Pessoa Trainee - Segurança da Informação</h5>
                         <p class="card-text">Vila Velha -ES</p>
                         <a href="https://lnkd.in/dSHg_srb" target="_blank" class="btn btn-primary">Tenho Interesse</a>
                     </div>

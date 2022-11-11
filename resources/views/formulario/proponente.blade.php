@@ -1,19 +1,18 @@
-<section class="inscricao mb-2 rounded" id="proponente">
+<section class="formulario mb-2 rounded" id="proponente">
+    <img src="../img/idea_lg.svg" alt="">
     <h2>Faça sua Proposta</h2>
     <p> Você tem uma ideia e quer transformá-la em realidade, conte com a nossa equipe Unitech.</p>
-    <div class="row d-flex align-items-center">
-        <form class="row g-3" id="f_proponente">
-            <div class="row d-flex justify-content-center align-items-center align-self-center">
-                <legend class="col-form-label col-4 pt-0">Cadastrar como</legend>
-                <div class="col-8 d-flex justify-content-around align-items-center">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="form-type" type="radio" id="inlineRadio1" value="empresa" form-type>
-                        <label class="form-check-label" for="inlineRadio1">Empresa</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="form-type" type="radio" id="inlineRadio2" value="pessoa_fisica" form-type>
-                        <label class="form-check-label" for="inlineRadio2">Pessoa Física</label>
-                    </div>
+    <div class="d-flex align-items-center">
+        <form class="row g-3 text-start" id="f_proponente">
+            <div class="d-flex align-items-center">
+                <legend class="form-label pt-0 fs-5">Cadastrar como</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="form-type" type="radio" id="inlineRadio1" value="empresa" form-type>
+                    <label class="form-check-label" for="inlineRadio1">Empresa</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="form-type" type="radio" id="inlineRadio2" value="pessoa_fisica" form-type>
+                    <label class="form-check-label" for="inlineRadio2">Pessoa Física</label>
                 </div>
             </div>
             <fieldset class="form-group pt-2 hidden" hiddenable pessoa_fisica disabled>
@@ -96,8 +95,8 @@
                 <div class="row">
                     <div class="col-md-6 d-flex">
                         <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <legend class="col-form-label col-4 pt-0">É uma Aplicação?</legend>
-                            <div class="col-8 d-flex justify-content-center align-items-center">
+                            <legend class="col-form-label col p-0 ps-3">É uma Aplicação?</legend>
+                            <div class="col-6 d-flex justify-content-center align-items-center">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="app" id="app1" value="1" checked>
                                     <label class="form-check-label" for="app1">
@@ -128,7 +127,7 @@
                 </div>
             </fieldset>
             <div class="col-12 d-grid gap-2">
-                <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                <button type="submit" class="btn btn-outline-success">Confirmar inscrição</button>
             </div>
         </form>
     </div>

@@ -36,6 +36,12 @@ Route::get('/estudante', function () {
     ]);
 });
 
+Route::get('/formularios', function () {
+    return view('formularios', [
+        'pagina' => 'estudante'
+    ]);
+});
+
 Route::get('/colaborador', function () {
     return view('colaborador', [
         'pagina' => 'colaborador'

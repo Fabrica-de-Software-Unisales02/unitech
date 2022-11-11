@@ -6,7 +6,7 @@
     </div>
     <!-- Apresentação -->
     <section class="institucional mb-2 row" id="sobre">
-        <h2 class="fw-bolder fs-1 text-secondary">Em Produção</h2>
+        <h2 class="fs-1 text-secondary">Em Produção</h2>
     </section>
     <br>
     <!-- @include('formulario.formulario1')

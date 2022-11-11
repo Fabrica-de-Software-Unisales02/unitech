@@ -1,8 +1,9 @@
-<section class="inscricao mb-2 rounded" id="colaborador">
+<section class="formulario mb-2 rounded" id="colaborador">
+    <img src="../img/team_lg.svg" alt="">
     <h2>Inscrição para colaboradores Pessoa Física ou Pessoa Jurídica </h2>
     <p>Se você Pessoa Física ou Pessoa Jurídica quer participar de um dos nossos projetos, inscreva-se será um prazer tê-los conosco.</p>
     <div class="row d-flex align-items-center">
-        <form class="row g-3" id="f_colaborador">
+        <form class="row g-3 text-start" id="f_colaborador">
             <div class="col-md-4">
                 <label for="nome_completo" class="form-label">Nome Completo</label>
                 <input type="text" class="form-control" id="nome_completo" name="nome_completo" placeholder=" ">
@@ -77,7 +78,7 @@
                 </select>
             </div>
             <div class="col-12 d-grid gap-2">
-                <button type="submit" class="btn btn-secondary">Cadastrar</button>
+                <button type="submit" class="btn btn-outline-success">Confirmar inscrição</button>
             </div>
         </form>
     </div>
