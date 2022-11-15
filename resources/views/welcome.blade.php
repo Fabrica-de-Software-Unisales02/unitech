@@ -5,7 +5,7 @@
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
     <section class="institucional mb-2 mt-4 row" id="sobre">
-        <h2>Em Produção</h2>
+        <h2>Em Produção...</h2>
     </section>
 </main>
 @include('template.footer')
