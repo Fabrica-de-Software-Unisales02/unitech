@@ -14,10 +14,17 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::create([
-            'name' => 'Unitech Admin',
-            'email' => 'UNITECH-RedesSociais@souunisales.com.br',
-            'password' => bcrypt('senha'),
+        $user = User::insert([
+            [
+                'name' => 'Unitech Admin',
+                'email' => 'UNITECH-RedesSociais@souunisales.com.br',
+                'password' => bcrypt('senha'),
+            ],
+            [
+                'name' => 'Marcelo',
+                'email' => 'mschuster@salesiano.br',
+                'password' => bcrypt('senha'),
+            ],
         ]);
     }
 }

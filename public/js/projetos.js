@@ -86,23 +86,23 @@ function appendLink(page, url, active) {
   links.append(li);
 }
 function appendProject(input, title, text) {
-  var col = document.createElement('div');
+  // let col = document.createElement('div');
   var card = document.createElement('div');
   var card_body = document.createElement('div');
   var card_title = document.createElement('h5');
   var card_text = document.createElement('p');
-  col.classList.add('col-md-4');
-  card.classList.add('card', 'bg-dark');
+  card.classList.add('col-md-4', 'card', 'bg-dark');
   card_body.classList.add('card-body');
   card_title.classList.add('card-title');
   card_text.classList.add('card-text');
   card_title.append(title);
   card_text.append(text);
-  col.append(card);
+
+  // card.append(card);
   card.append(card_body);
   card_body.append(card_title);
   card_body.append(card_text);
-  input.append(col);
+  input.append(card);
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (appendProject);
 /******/ })()

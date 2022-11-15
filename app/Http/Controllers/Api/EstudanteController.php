@@ -34,7 +34,7 @@ class EstudanteController extends Controller
     public function show($id) {
 
         try {
-            $estudante = $this->estudante->findOrFail($id);
+            $estudante = $this->estudante->with('interesse')->findOrFail($id);
 
             return response()->json($estudante, 200);
 

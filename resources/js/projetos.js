@@ -61,14 +61,13 @@ function appendLink(page, url, active) {
 
 function appendProject(input, title, text) {
 
-    let col = document.createElement('div');
+    // let col = document.createElement('div');
     let card = document.createElement('div');
     let card_body = document.createElement('div');
     let card_title = document.createElement('h5');
     let card_text = document.createElement('p');
 
-    col.classList.add('col-md-4');
-    card.classList.add('card', 'bg-dark');
+    card.classList.add('col-md-4','card', 'bg-dark');
     card_body.classList.add('card-body');
     card_title.classList.add('card-title');
     card_text.classList.add('card-text');
@@ -76,12 +75,12 @@ function appendProject(input, title, text) {
     card_title.append(title);
     card_text.append(text);
 
-    col.append(card);
+    // card.append(card);
     card.append(card_body);
     card_body.append(card_title);
     card_body.append(card_text);
 
-    input.append(col);
+    input.append(card);
 
 }
 

@@ -475,7 +475,7 @@ select:focus {
     }
 
 #projetos .card {
-    height: 20vh !important;
+    /* height: 20vh !important; */
     transition: 0.4s;
 }
 

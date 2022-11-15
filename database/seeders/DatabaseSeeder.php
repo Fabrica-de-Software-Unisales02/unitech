@@ -22,6 +22,5 @@ class DatabaseSeeder extends Seeder
             CursosSeeder::class,
             ProjetosTableSeeder::class,
         ]);
-        // $this->call(ProjetosTableSeeder::class);
     }
 }
