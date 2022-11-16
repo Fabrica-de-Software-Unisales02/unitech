@@ -6,7 +6,7 @@
     </div>
     <br>
     <h2 class="mt-4 text-light" style="font-family: Nunito;" tabindex="0">Projetos Em Execução</h2>
-    <p>Abaixo estão listados nossos projetos em execução que nois tamo coisando</p>
+    <p>Abaixo estão listados nossos projetos em fase de desenvolvimento</p>
     <div class="row my-4 g-2" id="projetos" params='disabled_at;status:=:1'>
     </div>
     <nav aria-label="Page navigation">
