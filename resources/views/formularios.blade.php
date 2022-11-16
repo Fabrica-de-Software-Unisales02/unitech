@@ -7,7 +7,7 @@
     <br>
     <h2 class="p-4 text-light" style="font-family: Nunito;">Faça parte dos nossos projetos</h2>
     <div class="row">
-        <div class="col-4">
+        <div class="col mb-2">
             <div class="card-formulario">
                 <div class="education">
                     <img src="../img/education.svg" alt="">
@@ -17,7 +17,7 @@
                 <a class="btn btn-outline-success" href="./estudante">Me inscrever agora</a>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col mb-2">
             <div class="card-formulario">
                 <div class="education">
                     <img src="../img/hands.svg" alt="">
@@ -27,7 +27,7 @@
                 <a class="btn btn-outline-success" href="./colaborador">Me inscrever agora</a>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col mb-2">
             <div class="card-formulario">
                 <div class="education">
                     <img src="../img/idea.svg" alt="">
