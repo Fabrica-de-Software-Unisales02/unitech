@@ -23,7 +23,7 @@
                     <img src="../img/hands.svg" alt="">
                     <h5>Colaborador</h5>
                 </div>
-                <p>Se você é aluno unisales e tem interesse em participar em um dos nossos projetos, faça sua inscrição e logo entraremos em contato.</p>
+                <p>Se você Pessoa Física ou Pessoa Jurídica quer participar de um dos nossos projetos, inscreva-se será um prazer tê-los conosco.</p>
                 <a class="btn btn-outline-success" href="./colaborador">Me inscrever agora</a>
             </div>
         </div>
@@ -33,7 +33,7 @@
                     <img src="../img/idea.svg" alt="">
                     <h5>Proponente</h5>
                 </div>
-                <p>Se você é aluno unisales e tem interesse em participar em um dos nossos projetos, faça sua inscrição e logo entraremos em contato.</p>
+                <p>Você tem uma ideia e quer transformá-la em realidade, conte com a nossa equipe Unitech.</p>
                 <a class="btn btn-outline-success" href="./proponente">Me inscrever agora</a>
             </div>
         </div>
