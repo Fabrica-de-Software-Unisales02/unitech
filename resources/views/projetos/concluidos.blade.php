@@ -6,7 +6,7 @@
     </div>
     <br>
     <h2 class="mt-4 text-light" style="font-family: Nunito;">Projetos Concluídos</h2>
-    <p>Abaixo estão listados projetos que nois ja consluiu</p>
+    <p>Abaixo estão listados os projetos já concluídos por nossa equipe</p>
     <div class="row my-4 g-2" id="projetos" params='disabled_at;status:=:0'>
     </div>
     <nav aria-label="Page navigation">
