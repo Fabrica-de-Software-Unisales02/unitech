@@ -5,11 +5,19 @@
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
     <section class="institucional mb-2 mt-4 row" id="sobre">
-        <p class="mt-4">
+        <h2 class="min-h-screen d-flex justify-content-center align-items-center">
             Bem vindo ao Website do laboratório específico dos cursos de Análise e Desenvolvimento de Sistemas, Sistemas de Informação e Engenharia de Software do Unisales.
-            Aqui você encontrará informações sobre nossos serviços e projetos em andamento. Há também um área específica para contatos, caso queira participar de projetos,
-            sugerir um novo projeto ou até contribuir conosco de outra forma. Entre em contato!
-        </p>
+        </h2>
+        <section class="row mt-4">
+            <i class="col bi bi-emoji-laughing" style="font-size: 100px;"></i>
+            <div class="col">
+                <p>
+                    Aqui você encontrará informações sobre nossos serviços e projetos em andamento. Há também um área específica para contatos, caso queira participar de projetos,
+                    sugerir um novo projeto ou até contribuir conosco de outra forma.
+                </p>
+                <button class="btn btn-lg btn-outline-success">Entre em contato!</button>
+            </div>
+        </section>
         <p>
             Como o Laboratório faz parte dos cursos de Tecnologia da Informação e Computação do Unisales - Centro Universitário Salesiano é importante listar algumas áreas onde podemos atuar e contribuir:
         </p>

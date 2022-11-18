@@ -11,7 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('node_modules/jquery/dist/jquery.js','public/js')
+    .js('node_modules/bootstrap/dist/js/bootstrap.js','public/js')
+    .js('resources/js/app.js', 'public/js')
     .js('resources/js/estudante.js', 'public/js')
     .js('resources/js/colaborador.js', 'public/js')
     .js('resources/js/proponente.js', 'public/js')
@@ -19,3 +21,4 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ])
+    .sass('resources/scss/app.scss', 'public/css/bootstrap.css')

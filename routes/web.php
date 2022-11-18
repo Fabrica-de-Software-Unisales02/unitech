@@ -19,7 +19,13 @@ use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     return view('welcome',[
-        'pagina' => 'app'
+        'pagina' => null
+    ]);
+});
+
+Route::get('/home', function () {
+    return view('home',[
+        'pagina' => null
     ]);
 });
 
