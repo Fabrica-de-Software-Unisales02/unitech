@@ -36,14 +36,14 @@ Route::get('testemail', function () {
     Mail::send(new newUnitech($user, $estudante, 'teste'));
 });
 
-Route::get('/estudante', function () {
-    return view('estudante', [
-        'pagina' => 'estudante'
+Route::get('/formularios', function () {
+    return view('formularios', [
+        'pagina' => null
     ]);
 });
 
-Route::get('/formularios', function () {
-    return view('formularios', [
+Route::get('/estudante', function () {
+    return view('estudante', [
         'pagina' => 'estudante'
     ]);
 });
