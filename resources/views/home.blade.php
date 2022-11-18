@@ -5,9 +5,11 @@
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
     <section class="institucional mb-2 mt-4 row fw-bold" id="sobre">
-        <h2 class="min-h-screen d-flex justify-content-center align-items-center">
-            Bem vindo ao Website do laboratório específico dos cursos de Análise e Desenvolvimento de Sistemas, Sistemas de Informação e Engenharia de Software do Unisales.
-        </h2>
+        <div class="min-h-screen d-flex justify-content-center align-items-center">
+            <h2 class="text-light">
+                <strong class="text-primary">Bem vindo</strong> ao Website do laboratório específico dos cursos de Análise e Desenvolvimento de Sistemas, Sistemas de Informação e Engenharia de Software do Unisales.
+            </h2>
+        </div>
         <section class="row mb-4 flex-row-reverse mx-0 min-h-screen">
             <i class="col-12 col-md-6 bi bi-emoji-sunglasses-fill text-primary d-flex flex-column justify-content-center"" style=" font-size: 100px;"></i>
             <div class="col d-flex flex-column justify-content-center">
