@@ -4,39 +4,61 @@
     <!-- Avisos em Geral -->
     <div class="toast-container position-fixed bottom-0 right-0 p-3">
     </div>
-    <section class="institucional mb-2 mt-4 row" id="sobre">
+    <section class="institucional mb-2 mt-4 row fw-bold" id="sobre">
         <h2 class="min-h-screen d-flex justify-content-center align-items-center">
             Bem vindo ao Website do laboratório específico dos cursos de Análise e Desenvolvimento de Sistemas, Sistemas de Informação e Engenharia de Software do Unisales.
         </h2>
-        <section class="row mt-4">
-            <i class="col bi bi-emoji-laughing" style="font-size: 100px;"></i>
-            <div class="col">
+        <section class="row mb-4 flex-row-reverse mx-0 min-h-screen">
+            <i class="col-12 col-md-6 bi bi-emoji-sunglasses-fill text-primary d-flex flex-column justify-content-center"" style=" font-size: 100px;"></i>
+            <div class="col d-flex flex-column justify-content-center">
                 <p>
                     Aqui você encontrará informações sobre nossos serviços e projetos em andamento. Há também um área específica para contatos, caso queira participar de projetos,
                     sugerir um novo projeto ou até contribuir conosco de outra forma.
                 </p>
-                <button class="btn btn-lg btn-outline-success">Entre em contato!</button>
+                <button class="btn btn-lg btn-outline-primary shadow-lg">Entre em contato! <i class="col bi bi-emoji-wink"></i></button>
             </div>
         </section>
-        <p>
-            Como o Laboratório faz parte dos cursos de Tecnologia da Informação e Computação do Unisales - Centro Universitário Salesiano é importante listar algumas áreas onde podemos atuar e contribuir:
-        </p>
-        <ul>
-            <li>Desenvolvimento de Sistemas</li>
-            <li>Desenvolvimento para Web e Web Mobile</li>
-            <li>Desenvolvimento Mobile</li>
-            <li>Análise de Dados / Data Science</li>
-            <li>Políticas de Segurança</li>
-            <li>Melhoria de Processos</li>
-            <li>Cursos para a comunidade</li>
-            <li>Apoio em ideação e organização de projetos em TI</li>
+        <section class="row my-4 mx-0 min-h-screen justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+                <p>
+                    Como o Laboratório faz parte dos cursos de Tecnologia da Informação e Computação do Unisales - Centro Universitário Salesiano é importante listar algumas áreas onde podemos atuar e contribuir:
+                </p>
+            </div>
+            <div class="col">
+                <ul class="list-group shadow-lg">
+                    <li class="list-group-item list-group-item-dark">Desenvolvimento de Sistemas</li>
+                    <li class="list-group-item list-group-item-primary">Desenvolvimento para Web e Web Mobile</li>
+                    <li class="list-group-item list-group-item-dark">Desenvolvimento Mobile</li>
+                    <li class="list-group-item list-group-item-primary">Análise de Dados / Data Science</li>
+                    <li class="list-group-item list-group-item-dark">Políticas de Segurança</li>
+                    <li class="list-group-item list-group-item-primary">Melhoria de Processos</li>
+                    <li class="list-group-item list-group-item-dark">Cursos para a comunidade</li>
+                    <li class="list-group-item list-group-item-primary">Apoio em ideação e organização de projetos em TI</li>
+                </ul>
+                <small class="fst-italic fw-lighter">
+                    Caso não consiga identificar nestas áreas, como podemos ajudar, entre em contato no e-mail:
+                        <a href="mailto:unitech@salesiano.br" class="text-decoration-underline fw-normal">unitech@salesiano.br</a>
+                </small>
+            </div>
+        </section>
 
-        </ul>
 
-        <p>
-            Caso não consiga identificar nestas áreas, como podemos ajudar, entre em contato no e-mail: unitech@salesiano.br
-            (inserir fotos de laboratórios, logotipo dos softwares e apps, entre outros elementos visuais).
-        </p>
+        <section class="row mx-0">
+                <div class="card text-bg-dark col mx-2 px-0">
+                    <img src="https://via.placeholder.com/250x100" class="card-img" alt="...">
+                    <div class="card-img p-2">
+                        <h5 class="card-title">Projeto</h5>
+                        <p class="card-text">Este é um projeto</p>
+                    </div>
+                </div>
+                <div class="card text-bg-dark col mx-2 px-0 d-none d-md-block">
+                    <img src="https://via.placeholder.com/250x100" class="card-img" alt="...">
+                    <div class="card-img p-2">
+                        <h5 class="card-title">Projeto</h5>
+                        <p class="card-text">Este é outro projeto</p>
+                    </div>
+                </div>
+        </section>
 
         <h4>Nossos cursos:</h4>
 
@@ -66,7 +88,7 @@
             </li>
             <li>
                 Software Bicicletário - Software livre para controle de acesso a bicicletários. Contribuição do Unitech para ambientes que precisam deste controle.
-                </li>
+            </li>
             <li>
                 Fliperama - Trabalho interdisciplinar sendo conduzido para testes utilizando arduíno, raspberry e programação.
                 Vai ajudar na aplicação de técnicas e conceitos aprendidos em sala de aula... e para diversão!
