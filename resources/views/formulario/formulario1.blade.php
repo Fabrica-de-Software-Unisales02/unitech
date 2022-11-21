@@ -58,7 +58,7 @@
                 </select>
             </div>
             <div class="col-12 d-grid gap-2">
-                <button type="submit" class="btn btn-outline-primary">Confirmar inscrição</button>
+                <button type="submit" class="btn btn-outline-primary fw-bold">Confirmar inscrição</button>
             </div>
         </form>
     </div>
