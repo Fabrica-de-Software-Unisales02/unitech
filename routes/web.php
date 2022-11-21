@@ -74,12 +74,12 @@ Route::get('/projetos-concluidos', function () {
 
 Route::get('/vagas-estagio', function () {
     return view('vagas.estagio', [
-        'pagina' => 'app'
+        'pagina' => null
     ]);
 });
 
 Route::get('/vagas-emprego', function () {
     return view('vagas.emprego', [
-        'pagina' => 'app'
+        'pagina' => null
     ]);
 });
