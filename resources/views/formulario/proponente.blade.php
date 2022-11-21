@@ -127,7 +127,7 @@
                 </div>
             </fieldset>
             <div class="col-12 d-grid gap-2">
-                <button type="submit" class="btn btn-outline-success">Confirmar inscrição</button>
+                <button type="submit" class="btn btn-outline-primary">Confirmar inscrição</button>
             </div>
         </form>
     </div>
