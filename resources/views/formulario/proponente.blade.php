@@ -19,11 +19,11 @@
                 <div class="row">
                     <div class="col-md-8">
                         <label for="nome_completo" class="form-label">Nome Completo</label>
-                        <input type="text" class="form-control" id="nome_completo" name="nome_completo" placeholder="Fulano de Tal">
+                        <input type="text" class="form-control" id="nome_completo" name="nome_completo">
                     </div>
                     <div class="col-md-4">
                         <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="00000000000">
+                        <input type="text" class="form-control" id="cpf" name="cpf">
                     </div>
                 </div>
             </fieldset>
@@ -31,11 +31,11 @@
                 <div class="row">
                     <div class="col-md-4">
                         <label for="razao_social" class="form-label">Razão Social</label>
-                        <input type="text" class="form-control" id="razao_social" name="razao_social" placeholder="Fulano de Tal">
+                        <input type="text" class="form-control" id="razao_social" name="razao_social">
                     </div>
                     <div class="col-md-4">
                         <label for="cnpj" class="form-label">Cnpj</label>
-                        <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00">
+                        <input type="text" class="form-control" id="cnpj" name="cnpj">
                     </div>
                     <div class="col-md-4">
                         <label for="tipo_empresa" class="form-label">Tipo de Empresa</label>
@@ -55,19 +55,19 @@
                     </div>
                     <div class="col-6 col-md-8">
                         <label for="site" class="form-label">Site</label>
-                        <input type="url" class="form-control" id="site" name="site" placeholder="https://site.com">
+                        <input type="url" class="form-control" id="site" name="site">
                     </div>
                     <div class="col-6 col-md-4">
                         <label for="facebook" class="form-label">Facebook</label>
-                        <input type="url" class="form-control" id="facebook" name="facebook" placeholder="https://fb.com/fulano.cicrano">
+                        <input type="url" class="form-control" id="facebook" name="facebook">
                     </div>
                     <div class="col-6 col-md-4">
                         <label for="instagram" class="form-label">Instagram</label>
-                        <input type="url" class="form-control" id="instagram" name="instagram" placeholder="https://instagram.com/fulano.cicrano">
+                        <input type="url" class="form-control" id="instagram" name="instagram">
                     </div>
                     <div class="col-6 col-md-4">
                         <label for="linkedin" class="form-label">LinkedIn</label>
-                        <input type="url" class="form-control" id="linkedin" name="linkedin" placeholder="https://likedin.com/fulano.cicrano">
+                        <input type="url" class="form-control" id="linkedin" name="linkedin">
                     </div>
                 </div>
             </fieldset>
@@ -75,19 +75,19 @@
                 <div class="row">
                     <div class="col-md-4">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(##) ####-####">
+                        <input type="tel" class="form-control" id="telefone" name="telefone">
                     </div>
                     <div class="col-md-4">
                         <label for="nome_contato" class="form-label">Nome de Contato</label>
-                        <input type="name" class="form-control" id="nome_contato" name="nome_contato" placeholder="Representante">
+                        <input type="name" class="form-control" id="nome_contato" name="nome_contato">
                     </div>
                     <div class="col-md-4">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="site.com.br">
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="col-md-12">
                         <label for="endereco" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Bairro Rua tal 176">
+                        <input type="text" class="form-control" id="endereco" name="endereco">
                     </div>
                 </div>
             </fieldset>
