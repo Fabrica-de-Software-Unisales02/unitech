@@ -45,25 +45,18 @@ function init_colaborador(server) {
             $('#f_colaborador')[0].reset();
 
             showToast('Cadastro Concluído com sucesso', 'success');
-            // appendToast('Cadastro Concluído com sucesso', 'success').then(element => {
-            //     const toast = new bootstrap.Toast(element);
-            //     toast.show();
-            // });
         }).catch(data => {
             toggleLoader();
             data = data.responseJSON.errors;
             if (Object.keys(data).length) {
-                for (let erro in data) {
-                    form.querySelector(`#${erro}`).classList.add('is-invalid');
-                }
+                Object.entries(data).forEach(error => {
+                    console.log(error)
+                    showToast(error[1], 'danger')
+                    $(`[name="${error[0]}"`).addClass('is-invalid');
+                });
             } else {
                 showToast('Algo de errado não está certo', 'danger');
-                // appendToast('Algo de errado não está certo', 'danger').then(element => {
-                //     const toast = new bootstrap.Toast(element);
-                //     toast.show();
-                // });
             }
         });
     });
-
 }

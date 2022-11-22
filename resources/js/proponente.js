@@ -57,16 +57,8 @@ function init_colaborador(server) {
                     showToast(error[1], 'danger')
                     $(`[name="${error[0]}"`).addClass('is-invalid');
                 });
-                // for (let erro in data) {
-                //     showToast(erro, 'danger')
-                //     $(`[name="${erro}"`).addClass('is-invalid');
-                // }
             } else {
                 showToast('Algo de errado não está certo', 'danger');
-                // appendToast('Algo de errado não está certo', 'danger').then(element => {
-                //     const toast = new bootstrap.Toast(element);
-                //     toast.show();
-                // });
             }
         });
     });
