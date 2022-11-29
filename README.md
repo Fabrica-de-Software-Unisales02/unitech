@@ -27,7 +27,7 @@ ___
 The first step is to download the project, for this you can copy the code below and run it in your GIT terminal
 
 ```
-https://github.com/izaelgs/list
+git clone git@github.com:Fabrica-de-Software-Unisales/unitech.git
 ```
 ____
 
