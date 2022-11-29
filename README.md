@@ -1,6 +1,6 @@
 # Order List
 
-## Instalation
+## Technologies used
 
 ### Frontend
 - Jquery
