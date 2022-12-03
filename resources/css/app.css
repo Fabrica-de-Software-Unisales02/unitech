@@ -271,6 +271,17 @@ video {
         padding-right: 2rem;
     }
 }
+
+@media (min-width: 1366px) {
+
+    .navbar-nav {
+        transform: translate(-50%, -50%) !important;
+        left: 50% !important;
+        top: 50% !important;
+        position: absolute !important;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .dark\:bg-gray-800 {
         --bg-opacity: 1;
@@ -358,6 +369,19 @@ h1, h2, h5 {
     .navbar-collapse input {
         background-color: #CCDEB9 !important;
     }
+
+.banner {
+    background-image: url('../img/wellcome.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    padding-top: 60vh;
+}
+
+.btn-outline-primary {
+    transition: 0.8s;
+}
 
 .card-formulario {
     box-sizing: border-box;
