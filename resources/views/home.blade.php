@@ -42,7 +42,7 @@
         Como o Laboratório faz parte dos cursos de Tecnologia da Informação e Computação do Unisales - Centro Universitário
         Salesiano é importante listar algumas áreas onde podemos atuar e contribuir:
     </p>
-    <div class="d-flex align-items-center justify-content-around fw-light text-primary text-start lh-lg py-2 mt-4 container-sm">
+    <div class="d-flex flex-md-row flex-column align-items-center justify-content-around fw-light text-primary text-start lh-lg py-2 mt-4 container-sm">
         <div>
             <ul>
                 <li><h2 style="font-size: 17px;">Desenvolvimento de Sistemas</h2></li>
@@ -65,10 +65,11 @@
             <a href="https://mailto:unitech@salesiano.br" target="_blank" class="text-primary text-decoration-underline fw-normal">unitech@salesiano.br</a>
     </small>
 </main>
+<!-- Nossos Cursos -->
 <div class="py-4">
     <div class="text-center mt-4 p-4" style="background-color: #10151F;" id="nossos_cursos">
         <h2>Nossos Cursos</h2>
-        <div class="d-flex align-items-center justify-content-around fw-light lh-lg py-2 mt-4 container-sm">
+        <div class="d-flex flex-md-row flex-column align-items-center justify-content-around fw-light lh-lg py-2 mt-4 container-sm">
             <div>
                 <ul style="list-style:none">
                     <li><h2 class="text-light" style="font-size: 17px;">Análise e Desenvolvimento de Sistemas (Tecnólogo)</h2></li>
@@ -90,6 +91,7 @@
         </small>
     </div>
 </div>
+<!-- Nossos Projetos -->
 <div class="container text-center py-4 my-4 text-light">
     <h2>Nossos Projetos</h2>
     <div class="row justify-content-md-center">
