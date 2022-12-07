@@ -74,3 +74,6 @@ Now, just use the comand to run the server on localhost:8000
 ```
 php artisan serve
 ```
+
+if you are looking to run the application in a production environment with apache2 you can follow further instructions at:
+https://www.hostinger.com.br/tutoriais/como-instalar-laravel-ubuntu
