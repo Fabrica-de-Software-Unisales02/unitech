@@ -16,9 +16,16 @@ ___
 
 ## Prerequisites
 - Php 7.4
+    - remembering to uncomment these extensions in the php.ini file
+        - curl
+        - fileinfo
+        - mbstring
+        - openssl
+        - pdo_mysql
 - Composer
 - MySql
 - NodeJs
+
 ___
 
 ## How to use?
