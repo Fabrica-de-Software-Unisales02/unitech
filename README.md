@@ -41,7 +41,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 #### Step 2
-Then is needed to configure some database things on .env file
+Then is needed to configure some database and smtp things on .env file
 ```
 sudo nano .env
 ```
