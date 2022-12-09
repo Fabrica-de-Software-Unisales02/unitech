@@ -113,3 +113,6 @@ Emails are sent to each user's emails which can be managed by routes `api/user` 
 
 The views of the emails can be managed on `resources/views/emails` folder
 ...
+
+if you are looking to run the application in a production environment with apache2 you can follow further instructions at:
+https://www.hostinger.com.br/tutoriais/como-instalar-laravel-ubuntu
