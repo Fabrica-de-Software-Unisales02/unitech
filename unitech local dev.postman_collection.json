@@ -1,0 +1,2182 @@
+{
+	"info": {
+		"_postman_id": "44948775-f491-8bd9-5e82-c04c6c56a3c8",
+		"name": "unitech local dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23704643"
+	},
+	"item": [
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "izael",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "izael-123@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "senha123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "senha123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"user"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjMwOTA0MCwiZXhwIjoxNjY2MzEyNjQwLCJuYmYiOjE2NjYzMDkwNDAsImp0aSI6IjJ0V3FpenBhTGRxSU5tREUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EQRKxbNb99IcKoNk8ScFl2fkFIMT9Yp3wX6WqJkyU5o",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "izael",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "izael-123@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "senha123",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "senha123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"user",
+								"1"
+							],
+							"query": [
+								{
+									"key": "auth",
+									"value": null,
+									"disabled": true
+								}
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjMwOTA0MCwiZXhwIjoxNjY2MzEyNjQwLCJuYmYiOjE2NjYzMDkwNDAsImp0aSI6IjJ0V3FpenBhTGRxSU5tREUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EQRKxbNb99IcKoNk8ScFl2fkFIMT9Yp3wX6WqJkyU5o",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "auth",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjMwOTA0MCwiZXhwIjoxNjY2MzEyNjQwLCJuYmYiOjE2NjYzMDkwNDAsImp0aSI6IjJ0V3FpenBhTGRxSU5tREUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EQRKxbNb99IcKoNk8ScFl2fkFIMT9Yp3wX6WqJkyU5o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjMwOTA0MCwiZXhwIjoxNjY2MzEyNjQwLCJuYmYiOjE2NjYzMDkwNDAsImp0aSI6IjJ0V3FpenBhTGRxSU5tREUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EQRKxbNb99IcKoNk8ScFl2fkFIMT9Yp3wX6WqJkyU5o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "UNITECH-RedesSociais@souunisales.com.br",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "senha",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Area de Atuação",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8zNS4yNDcuMjA5LjUxXC9hcGlcL0xvZ2luIiwiaWF0IjoxNjY1Njk4MDk4LCJleHAiOjE2NjU3MDE2OTgsIm5iZiI6MTY2NTY5ODA5OCwianRpIjoicE40OWhKNEpzNTQwbk9wUCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.b1714BPuasBv4hn_jhQMRW2Ax58eiu1lnLURiBF3P74"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "me exclua",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAtuacao",
+							"protocol": "http",
+							"host": [
+								"35",
+								"247",
+								"209",
+								"51"
+							],
+							"path": [
+								"api",
+								"areaAtuacao"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "tecnologia 2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAtuacao/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAtuacao",
+								"2"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8zNS4yNDcuMjA5LjUxXC9hcGlcL0xvZ2luIiwiaWF0IjoxNjY1NzAwOTM3LCJleHAiOjE2NjU3MDQ1MzcsIm5iZiI6MTY2NTcwMDkzNywianRpIjoibjE4emN3REc0a1RDSE1wUCIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.t5mPeLLEPgqGDLVoKhxGSHH5uF_M9QZ1fTQiqFLTCIA"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/areaAtuacao/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAtuacao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/areaAtuacao/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAtuacao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAtuacao/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAtuacao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projetos",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTcwMDk5NSwiZXhwIjoxNjY1NzA0NTk1LCJuYmYiOjE2NjU3MDA5OTUsImp0aSI6IlQxSFQ2QVB2QzB6TTZncEgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bE3iYVb6QxxIcHS0PoXdguxY1zewy75V7jvbq7YeDkY"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "projeto teste",
+									"type": "text"
+								},
+								{
+									"key": "descricao",
+									"value": "este projeto é um teste",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/projeto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NzE2MzAwNiwiZXhwIjoxNjY3MTY2NjA2LCJuYmYiOjE2NjcxNjMwMDYsImp0aSI6IkxMWGF1Y2QwU1NHZWlRVGUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OAFHnkp6jrL8ujVEPQr7feGCI2ka1ex3eqHcegOScOs"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "titulo",
+									"value": "Quiz acadêmico",
+									"type": "text"
+								},
+								{
+									"key": "descricao",
+									"value": "Primeiro Projeto",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "disabled_at",
+									"value": "2022-10-30 20:51:59",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/projeto/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"projeto",
+								"9"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTcwMDk5NSwiZXhwIjoxNjY1NzA0NTk1LCJuYmYiOjE2NjU3MDA5OTUsImp0aSI6IlQxSFQ2QVB2QzB6TTZncEgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bE3iYVb6QxxIcHS0PoXdguxY1zewy75V7jvbq7YeDkY"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/projeto/?conditions=disabled_at",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto",
+								""
+							],
+							"query": [
+								{
+									"key": "conditions",
+									"value": "disabled_at"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/projeto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "estudantes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTI2MTA4MywiZXhwIjoxNjY1MjY0NjgzLCJuYmYiOjE2NjUyNjEwODMsImp0aSI6IkFjVFRsdWl5T1B3NFNDS3UiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.w3gaGzOlYlgYb2JWUk_6ATEkIjOhspSRfJPtkSE6VE4"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/projeto/2/estudantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto",
+								"2",
+								"estudantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "colaboradoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/projeto/2/colaboradoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto",
+								"2",
+								"colaboradoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/projeto/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projeto",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Area de Atuação Projetos",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTM0OTY4MCwiZXhwIjoxNjY1MzUzMjgwLCJuYmYiOjE2NjUzNDk2ODAsImp0aSI6ImxOdnVIb05RZkpEek5lamUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pNjkvrwkW7LDamtY_iIDu7V9vONMKI8nmM9tr0NS1RY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "me exclua",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAP"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "tecnologia 2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAP/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAP",
+								"2"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTM0NTI1NiwiZXhwIjoxNjY1MzQ4ODU2LCJuYmYiOjE2NjUzNDUyNTYsImp0aSI6IklWS09KUWNuY3h4WUxqSUciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-Mc0jOxVsJRmnVnLEeKSG1B9bdFgYuz_Btls70xHn2Q"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/areaAPs/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAPs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/areaAP/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAP",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/areaAP/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"areaAP",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudantes",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTM0OTY4MCwiZXhwIjoxNjY1MzUzMjgwLCJuYmYiOjE2NjUzNDk2ODAsImp0aSI6ImxOdnVIb05RZkpEek5lamUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pNjkvrwkW7LDamtY_iIDu7V9vONMKI8nmM9tr0NS1RY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "curso",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nome_completo",
+									"value": "Izael Gonsalvis",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@teste.email",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "algum lugar num sei",
+									"type": "text"
+								},
+								{
+									"key": "registro_academico",
+									"value": "6920277654",
+									"type": "text"
+								},
+								{
+									"key": "periodo",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "forma_integracao",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "area_interesse",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "projeto",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/estudante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"estudante"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "curso",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nome_completo",
+									"value": "josciliano cabesa 100% atualizado",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@teste.email",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "casa do caraio kkk",
+									"type": "text"
+								},
+								{
+									"key": "registro_academico",
+									"value": "6920277654",
+									"type": "text"
+								},
+								{
+									"key": "periodo",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "forma_integracao",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/estudante/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"estudante",
+								"2"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/estudante/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"estudante",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2ODQ3MDkwNCwiZXhwIjoxNjY4NDc0NTA0LCJuYmYiOjE2Njg0NzA5MDQsImp0aSI6IkhrOHVybGxMdTVyUERGTkkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.7G97WHGd9MqePIJq-FZOc5iym-tb0loNzCG03u8dU28",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/estudante/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"estudante",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/estudante/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"estudante",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colaboradores",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTM0OTY4MCwiZXhwIjoxNjY1MzUzMjgwLCJuYmYiOjE2NjUzNDk2ODAsImp0aSI6ImxOdnVIb05RZkpEek5lamUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pNjkvrwkW7LDamtY_iIDu7V9vONMKI8nmM9tr0NS1RY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nome_completo",
+									"value": "colaborador inicial",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "colaborador@email.br",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "um lugar proximo",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "27988567745",
+									"type": "text"
+								},
+								{
+									"key": "email_profissional",
+									"value": "email@profissional.com",
+									"type": "text"
+								},
+								{
+									"key": "site",
+									"value": "ww.algumca-coisa.com",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "@perfil",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "@facebook",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "@perfil2",
+									"type": "text"
+								},
+								{
+									"key": "responsavel",
+									"value": "valdomiro pena",
+									"type": "text"
+								},
+								{
+									"key": "forma_integracao",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "area_interesse",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "projeto",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/colaborador",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"colaborador"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nome_completo",
+									"value": "colaborador teste atualizado",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "colaborador@email.br",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "um lugar proximo",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "27988567745",
+									"type": "text"
+								},
+								{
+									"key": "email_profissional",
+									"value": "email@profissional.com",
+									"type": "text"
+								},
+								{
+									"key": "site",
+									"value": "ww.algumca-coisa.com",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "@perfil",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "@facebook",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "@perfil2",
+									"type": "text"
+								},
+								{
+									"key": "responsável",
+									"value": "valdomiro pena",
+									"type": "text"
+								},
+								{
+									"key": "forma_integracao",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "projetos[]",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/colaborador/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"colaborador",
+								"3"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/colaborador/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"colaborador",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/colaborador/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"colaborador",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/colaborador/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"colaborador",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8zNS4yNDcuMjA5LjUxXC9hcGlcL0xvZ2luIiwiaWF0IjoxNjY1Njk3NTg0LCJleHAiOjE2NjU3MDExODQsIm5iZiI6MTY2NTY5NzU4NCwianRpIjoid25DemtqN2RFM0NzZTNDMSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eKUrbm2ESFkZDTA1axbeO1Hp44pGCQSSLynKKUXrGag"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "titulo",
+									"value": "analise e desenvolvimento de sistemas",
+									"type": "text"
+								},
+								{
+									"key": "periodos",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/curso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"curso"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NTM0OTY4MCwiZXhwIjoxNjY1MzUzMjgwLCJuYmYiOjE2NjUzNDk2ODAsImp0aSI6ImxOdnVIb05RZkpEek5lamUiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pNjkvrwkW7LDamtY_iIDu7V9vONMKI8nmM9tr0NS1RY",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/cursos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cursos"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa Proponente",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "razao_social",
+									"value": "testinelsons",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "1233455678",
+									"type": "text"
+								},
+								{
+									"key": "tipo_empresa",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "2798766653",
+									"type": "text"
+								},
+								{
+									"key": "nome_contato",
+									"value": "nome de alguem",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "em frente ao de costas",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "emeo@teste.test",
+									"type": "text"
+								},
+								{
+									"key": "site",
+									"value": "www.site.com.br",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "insta",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "face",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "linkdinho",
+									"type": "text"
+								},
+								{
+									"key": "area_projeto",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "app",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "contato",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/empresa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"empresa"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "razao_social",
+									"value": "testinelsons",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "1233455678",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "2798766653",
+									"type": "text"
+								},
+								{
+									"key": "nome_contato",
+									"value": "nome de alguem",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "em frente ao de costas",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "emeo@teste.test",
+									"type": "text"
+								},
+								{
+									"key": "site",
+									"value": "www.site.com.br",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "insta",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "face",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "linkdinho",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/empresa/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"empresa",
+								"2"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjI5MDE5NSwiZXhwIjoxNjY2MjkzNzk1LCJuYmYiOjE2NjYyOTAxOTUsImp0aSI6IlBQMmZJaGVIa1hnYWV5ZzgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.GFxTcutCyfs86LconbCCl2w7YuS-tV5mf-eQjPSvUSM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/empresa/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"empresa",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/empresa/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"empresa",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/empresa/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"empresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "razao_social",
+									"value": "testinelsons",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "1233455678",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "2798766653",
+									"type": "text"
+								},
+								{
+									"key": "nome_contato",
+									"value": "nome de alguem",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "em frente ao de costas",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "emeo@teste.test",
+									"type": "text"
+								},
+								{
+									"key": "site",
+									"value": "www.site.com.br",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "insta",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "face",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "linkdinho",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/empresa/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"empresa",
+								"2"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pessoa Física Proponente",
+			"item": [
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_completo",
+									"value": "Izael Gonsalves",
+									"type": "text"
+								},
+								{
+									"key": "cpf",
+									"value": "1664775865",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "27988467553",
+									"type": "text"
+								},
+								{
+									"key": "nome_contato",
+									"value": "contato longo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@grande.coisa",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "address kkkk estado unido",
+									"type": "text"
+								},
+								{
+									"key": "app",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "contato",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "area_projeto",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pessoa_fisica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pessoa_fisica"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic ZGVzdGluaS5jYXJ0ZXJAZXhhbXBsZS5vcmc6cGFzc3dvcmQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "area",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@grande.coisa",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "address kkkk estado unido",
+									"type": "text"
+								},
+								{
+									"key": "nome_contato",
+									"value": "contato longo",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "27988467553",
+									"type": "text"
+								},
+								{
+									"key": "tipo_empresa",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pessoa_fisica/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pessoa_fisica",
+								"1"
+							]
+						},
+						"description": "cadastrar estudante"
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9Mb2dpbiIsImlhdCI6MTY2NjI5MDE5NSwiZXhwIjoxNjY2MjkzNzk1LCJuYmYiOjE2NjYyOTAxOTUsImp0aSI6IlBQMmZJaGVIa1hnYWV5ZzgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.GFxTcutCyfs86LconbCCl2w7YuS-tV5mf-eQjPSvUSM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/pessoa_fisica/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"pessoa_fisica",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pessoa_fisica/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pessoa_fisica",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pessoa_fisica/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pessoa_fisica",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

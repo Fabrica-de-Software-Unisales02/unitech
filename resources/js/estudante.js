@@ -2,17 +2,16 @@ import { appendOptions } from './utils';
 import { toggleLoader } from './utils';
 import { showToast } from './utils';
 
-import { server } from './config';
 
-init_estudante(server);
+init_estudante();
 
-function init_estudante(server) {
+function init_estudante() {
 
     const form = document.querySelector('#f_estudante');
 
-    appendOptions(form.curso, 'cursos', server);
-    appendOptions(form.projeto, 'projeto', server);
-    appendOptions(form.area_interesse, 'areaAP', server);
+    appendOptions(form.curso, 'cursos');
+    appendOptions(form.projeto, 'projeto');
+    appendOptions(form.area_interesse, 'areaAP');
 
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -32,7 +31,7 @@ function init_estudante(server) {
         }
 
         $.ajax({
-            url: `http://${server}/api/estudante`,
+            url: `/api/estudante`,
             method: "post",
             data: data,
             dataType: "json"

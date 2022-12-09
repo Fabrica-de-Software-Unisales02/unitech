@@ -2,16 +2,14 @@ import { appendOptions } from './utils';
 import { toggleLoader } from './utils';
 import { showToast } from './utils';
 
-import { server } from './config';
-
-init_colaborador(server);
+init_colaborador();
 
 
-function init_colaborador(server) {
+function init_colaborador() {
 
     const form = document.querySelector('#f_proponente');
 
-    appendOptions(form.area, 'areaAtuacao', server);
+    appendOptions(form.area, 'areaAtuacao');
 
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -33,7 +31,7 @@ function init_colaborador(server) {
         console.log(type);
 
         $.ajax({
-            url: `http://${server}/api/${type}`,
+            url: `/api/${type}`,
             method: "post",
             data: data,
             dataType: "json"

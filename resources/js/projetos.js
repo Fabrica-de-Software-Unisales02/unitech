@@ -1,6 +1,4 @@
-const server = '35.247.209.51';
-
-init($('#projetos'), server);
+init($('#projetos'));
 
 
 $('[name="form-type"]').change(function (e) {
@@ -12,12 +10,12 @@ $('[name="form-type"]').change(function (e) {
     $(`[${e.target.value}]`).removeClass("hidden");
 });
 
-function init(input, server, url = false) {
+function init(input, url = false) {
     let params = input.attr('params');
     input.empty();
 
     $.ajax({
-        url: url ? url + `&conditions=${params}` : `http://${server}/api/projeto/?conditions=${params}`,
+        url: url ? url + `&conditions=${params}` : `/api/projeto/?conditions=${params}`,
         dataType: "json"
     }).then(data => {
         let items = data.current_page ? data.data : data;
@@ -50,7 +48,7 @@ function appendLink(page, url, active) {
 
     anch.addEventListener('click', e => {
         e.preventDefault();
-        init($('#projetos'), null, url);
+        init($('#projetos'), url);
         document.querySelector('h2').focus();
     })
 

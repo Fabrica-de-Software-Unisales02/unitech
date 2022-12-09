@@ -7,9 +7,9 @@ function toggleLoader() {
 
 }
 
-function appendOptions(input, route, server) {
+function appendOptions(input, route) {
     $.ajax({
-        url: `http://${server}/api/${route}`,
+        url: `/api/${route}`,
         dataType: "json"
     }).then(data => {
         let items = data.current_page ? data.data : data;
