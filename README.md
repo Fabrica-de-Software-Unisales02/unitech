@@ -112,3 +112,4 @@ MAIL_FROM_NAME="${APP_NAME}"
 Emails are sent to each user's emails which can be managed by routes `api/user` or `api/admin/user`
 
 The views of the emails can be managed on `resources/views/emails` folder
+...
