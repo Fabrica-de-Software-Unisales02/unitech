@@ -87,7 +87,7 @@ https://www.hostinger.com.br/tutoriais/como-instalar-laravel-ubuntu
 _____
 
 ## EndPoints
-The `route:list` command can be used to show a list of all the registered routes for the application.<p>
+The `php artisan route:list` command can be used to show a list of all the registered routes for the application.<p>
 The routes can also be consulted on Postman collection running
 "unitech local dev.postman_collection.json" file<p>
 All routes prefixed with `/admin` require Bearer Authentication token, which can be obtained from the api/Login route by sending user email and password.<p>
