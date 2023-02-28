@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 

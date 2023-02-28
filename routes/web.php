@@ -83,3 +83,7 @@ Route::get('/vagas-emprego', function () {
         'pagina' => null
     ]);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
