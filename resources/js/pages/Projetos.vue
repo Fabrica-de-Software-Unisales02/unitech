@@ -89,7 +89,7 @@ export default {
                 }
             ],
 
-            condicao: '',
+            condicao: 'executando',
 
         };
     },
