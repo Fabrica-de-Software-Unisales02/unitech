@@ -28,13 +28,23 @@ Route::get('/maisuma', function(){
 
 Route::namespace('App\Http\Controllers\Api')->group(function() {
 
-    Route::post('/Login', 'Auth\LoginJwtController@login')->name('login');
+    Route::post('/login', 'Auth\LoginJwtController@login')->name('login');
     Route::get('/Logout', 'Auth\LoginJwtController@login')->name('logout');
+
+    Route::group(['middleware' => 'api'], function() {
+        // Route::post('login', 'AuthController@login');
+        // Route::post('logout', 'AuthController@logout');
+        Route::post('refresh', 'AuthController@refresh');
+        Route::post('me', 'AuthController@me');
+
+    });
 
     Route::prefix('projeto')->group(function() {
         Route::get('/', 'ProjetoController@index');
         Route::get('/{id}', 'ProjetoController@show');
     });
+
+    Route::get('projetos', 'ProjetoController@indexAll');
 
     Route::prefix('cursos')->group(function() {
         Route::get('/', 'CursoController@index');

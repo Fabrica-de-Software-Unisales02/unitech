@@ -1,32 +1,46 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
 
 require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+import VueRouter from 'vue-router';
+import App from './components/App';
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import Cookie from 'js-cookie';
+import axios from 'axios';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+import routes from './router/routes';
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+Vue.use(VueRouter);
 
 const app = new Vue({
     el: '#app',
+    components: {App},
+    router: new VueRouter(routes)
 });
+
+const loginForm = document.querySelector('#loginForm');
+
+if(loginForm) loginForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    let payload = {
+        email: document.querySelector('#email').value,
+        password: document.querySelector('#password').value
+    }
+
+    axios.post('/api/login', payload)
+        .then(data => {
+            console.log(data);
+            Cookie.set("access_token", data.data.token);
+            window.location.href = '/admin/home';
+            // if(!hideSuccessMessage) this.showToast(data.data.message, "success");
+            // callback(data.data)
+        })
+        .catch(error => {
+            console.log(error);
+            alert("Não conseguimos autenticar seus dados alguma coisa ta errada eu acho");
+            // if(!hideErrorMessage) this.showErrors(error.response.data)
+            // if(errorHandler) errorHandler(error.response.data)
+        })
+})

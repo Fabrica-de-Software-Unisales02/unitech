@@ -36,6 +36,23 @@ class ProjetoController extends Controller
         // return new ProjetoCollection($projetos->paginate(10));
     }
 
+    public function indexAll(Request $request) {
+
+        $projetos = $this->projeto;
+        $projetoRepository = new ProjetoRepository($projetos);
+
+        if($request->has('conditions')) {
+            $projetos = $projetoRepository->selectConditions($request->get('conditions'));
+        }
+
+        if($request->has('fields')) {
+            $projetos = $projetoRepository->selectFilter($request->get('fields'));
+        }
+
+        return response()->json($projetoRepository->getResult()->get());
+        // return new ProjetoCollection($projetos->paginate(10));
+    }
+
     public function show($id) {
         $projeto = $this->projeto->find($id);
 
@@ -50,10 +67,9 @@ class ProjetoController extends Controller
             $projeto = $this->projeto->create($data);
 
             return response()->json([
-                'data' => [
-                    'msg' => 'projeto cadastrado com suseso'
-                ]
-            ], 200);return response()->json($projeto);
+                'message' => 'projeto cadastrado com suseso',
+                'data' => $projeto
+            ], 200);
         } catch (\Exception $e) {
             $message = new ApiMessages($e->getMessage());
             return response()->json($message->getMessage(), 401);
@@ -67,11 +83,7 @@ class ProjetoController extends Controller
             $projeto = $this->projeto->find($id);
             $projeto->update($data);
 
-            return response()->json([
-                'data' => [
-                    'msg' => 'projeto atualizado com suseso'
-                ]
-            ], 200);return response()->json($projeto);
+            return response()->json(['message' => 'projeto atualizado com suseso'], 200);
         } catch (\Exception $e) {
             $message = new ApiMessages($e->getMessage());
             return response()->json($message->getMessage(), 401);
@@ -84,11 +96,7 @@ class ProjetoController extends Controller
             $projeto = $this->projeto->find($id);
             $projeto->delete();
 
-            return response()->json([
-                'data' => [
-                    'msg' => 'projeto deletado com suseso'
-                ]
-            ], 200);return response()->json($projeto);
+            return response()->json(['message' => 'projeto deletado com suseso'], 200);
         } catch (\Exception $e) {
             $message = new ApiMessages($e->getMessage());
             return response()->json($message->getMessage(), 401);

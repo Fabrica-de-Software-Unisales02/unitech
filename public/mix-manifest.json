@@ -1,4 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/app.js": "/js/app.js?id=7db66e4ed7e29df87eb60d100d9ade14",
+    "/js/estudante.js": "/js/estudante.js?id=8f34378941f326d49b97546576d688c7",
+    "/js/colaborador.js": "/js/colaborador.js?id=ab3d7d32b3fd1ca88a825902b05c82cb",
+    "/js/proponente.js": "/js/proponente.js?id=c5dedb6ad698802ffdde324deec1533b",
+    "/js/projetos.js": "/js/projetos.js?id=1ad5005d083120bb388fdf73b7ddd06c",
+    "/css/app.css": "/css/app.css?id=f90f9711d1191928694d742a62ed10b0"
 }
