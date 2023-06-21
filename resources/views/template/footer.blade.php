@@ -4,7 +4,7 @@
             <ul class="nav">
                 <li><a href="#" target="_white">@Unitech-lab</a></li>
                 <li>Endereço: Av Vitória, 950, Forte São João -
-                    Vila Velha/ES CEP: 29017-950</li>
+                    Vitória/ES CEP: 29017-950</li>
                 <li>Telefone: 27 3331-8500</li>
             </ul>
         </div>
